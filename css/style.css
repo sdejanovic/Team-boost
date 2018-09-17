@@ -1,0 +1,256 @@
+:root {
+ 	--white: #fff;
+ 	--blue: #004ef8;
+ 	--grey: #f4f4f4;
+}
+body {
+	font-family: Verdana;
+	font-size: 14px;
+	color: #535353;
+	height: 100%;
+	background-color: var(----grey);
+}
+.container {
+	height: 100vh;
+	background-color: var(----grey);
+}
+
+.main-menu ul {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.main-menu ul li {
+}
+.main-menu ul li a {
+	color: #fff;
+	text-decoration: none;
+	margin: 0 10px;
+}
+.main-menu ul li a:hover {
+	text-decoration: underline;
+}
+
+h1 {
+	font-size: 24px;
+	font-weight: bold;
+	color: #061731;
+}
+section {
+	padding: 10px 10px 20px;
+}
+.header {
+	background-color: var(--blue);
+}
+.footer {
+	background-color: #061731;
+}
+.header,
+.footer {
+	padding: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.footer span {
+	color: #fff;
+}
+.content {
+	background-color: var(--white);
+}
+.inner {
+	background-color: var(----grey);
+}
+.wrap {
+	background-color: var(--white);
+}
+
+.header {
+	grid-area: header;
+}
+.footer {
+	grid-area: footer;
+}
+.content {
+	grid-area: content;
+}
+
+.container {
+	display: grid;
+	grid-template-areas: "header header header" "content content content" "footer footer footer";
+	grid-template-rows: 90px 1fr 70px;
+	grid-template-columns: 1fr 1000px 1fr;
+}
+
+.content {
+	grid-row-start:    2;
+	grid-row-end:      3;
+	grid-column-start: 2;
+	grid-column-end:   3;
+}
+
+label {
+	font-weight: 700;
+}
+.in-text {
+	font-weight: 300;
+    font-size: 14px;
+    color: #414141;
+    height: 46px;
+    width: 100%;
+    float: left;
+    border-radius: 5px;
+    border: 1px solid #d2d2d2;
+    padding: 0 15px;
+}
+textarea.in-text {
+	height: 100px;
+	padding: 18px 15px;
+}
+
+.btn {
+	padding: 0 25px;
+	width: 150px;
+    height: 40px;
+    font-size: 14px;
+    border-radius: 25px;	
+    background-color: var(--blue);
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    outline: 0;
+    border: 0; 
+}
+.btn:hover {
+	cursor: pointer;
+	background-color: #003ec5;
+}
+
+.custom-checkbox,
+.custom-radio {
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+    line-height: 17px;
+    font-weight: 300;
+}
+.custom-radio {
+    margin-right: 30px;
+}
+.custom-checkbox input,
+.custom-radio input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+.custom-checkbox .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 17px;
+    width: 17px;
+    background-color: #eee;
+}
+.custom-radio .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 17px;
+    width: 17px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+.custom-checkbox:hover input ~ .checkmark,
+.custom-radio:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+.custom-checkbox input:checked ~ .checkmark,
+.custom-radio input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.custom-checkbox input:checked ~ .checkmark:after,
+.custom-radio input:checked ~ .checkmark:after {
+    display: block;
+}
+.custom-checkbox .checkmark:after {
+	left: 6px;
+    top: 2px;
+    width: 3px;
+    height: 7px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.custom-radio .checkmark:after {
+    top: 5px;
+    left: 5px;
+    width: 7px;
+    height: 7px;
+	border-radius: 50%;
+	background: white;
+}
+
+.grid {
+	padding: 10px;
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: [labels] 150px [controls] 1fr;
+	align-items: center;
+}
+.grid > label {
+	grid-column: labels;
+}
+.grid .selectric-wrapper,
+.grid .in-text,
+.grid .btn,
+.grid > div {
+	grid-column: controls;
+}
+.grid .btn {
+	justify-self: end;
+}
+.content {
+	position: relative;
+	margin-top: 30px;
+}
+.tabs ul {
+	display: flex;
+}
+
+.tabs li,
+.accordion-head {
+	padding: 10px 0;	
+}
+.tabs li {
+	margin-right: 20px;
+}
+.tabs a,
+.accordion a {
+	text-decoration: none;
+	font-weight: bold;
+	color: #004ef8;
+}
+.tabs a:hover {
+	color: #081f3f;
+}
+.tab-item {
+	display: none;
+} 
+.tab-content {
+	display: grid;
+}
+
+.accordion-content {
+	display: none;
+}
+
+.hide {
+	display: none !important;
+}

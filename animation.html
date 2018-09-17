@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <link href="favicon.ico" rel="icon" />
+    <title>Team boost</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+        </header>
+		<div class="content">
+
+			<section>
+				<h1>Tabs</h1>
+				<div class="tabs">
+					<ul>
+						<li>
+							<a href="javascript:;" class="do-tab active" data-tab="your-information">Your information</a>
+						</li>
+						<li>
+							<a href="javascript:;" class="do-tab" data-tab="change-password">Change password</a>
+						</li>
+					</ul>
+					<div class="tab-item active" data-tab-content="your-information">
+						<div class="grid">
+							<label for="patientName">Patient name:</label>
+							<input type="text" name="patientName" id="patientName" placeholder="Enter name..." class="in-text" />
+
+							<label for="emailAddress">Email:</label>
+							<input type="email" name="emailAddress" id="emailAddress" placeholder="Enter email..." class="in-text" />
+
+							<label for="address">Address:</label>
+							<textarea name="address" id="address" maxlength="500" placeholder="Enter address..." class="in-text"></textarea>
+
+							<input type="button" value="Submit" class="btn" />
+						</div>
+					</div>
+					<div class="tab-item" data-tab-content="change-password">
+						<div class="grid">
+							<label for="current-password">Current password:</label>
+							<input type="password" placeholder="Enter current password..." class="in-text" name="current-password" id="current-password"/>					
+							
+							<label for="new-password">New password:</label>
+							<input type="password" placeholder="Enter password..." class="in-text" name="new-password" id="new-password"/>
+
+							<input type="button" value="Submit" class="btn" />
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<h1>Accordion</h1>
+				<div class="accordion">
+					<div class="item">
+						<div class="accordion-head">
+							<a href="javascript:;">
+								How satisfied are you with the Doctor Care Anywhere service?
+							</a>
+						</div>
+						<div class="accordion-content">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores qui fugiat tenetur odio quod necessitatibus sint saepe hic quia at dolore modi quisquam rem facilis quos velit quaerat eos recusandae.
+							</p>
+						</div>
+					</div>
+					<div class="item">
+						<div class="accordion-head">
+							<a href="javascript:;">
+								Was it easy to use?
+							</a>
+						</div>
+						<div class="accordion-content">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores qui fugiat tenetur odio quod necessitatibus sint saepe hic quia at dolore modi quisquam rem facilis quos velit quaerat eos recusandae.
+							</p>
+						</div>
+					</div>
+					<div class="item">
+						<div class="accordion-head">
+							<a href="javascript:;">
+								How would you rate the advice provided by the doctor you saw today?
+							</a>
+						</div>
+						<div class="accordion-content">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores qui fugiat tenetur odio quod necessitatibus sint saepe hic quia at dolore modi quisquam rem facilis quos velit quaerat eos recusandae.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<p>
+					lorem ipsum
+				</p>
+			</section>
+		</div>
+		<footer class="footer">
+            <span class="copy">© VEGA IT SOURCING</span>
+        </footer>
+    </div>
+
+    <script type="text/javascript" src="js/animation.js"></script>
+</body>
+</html>
