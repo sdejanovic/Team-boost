@@ -2,6 +2,7 @@
  	--white: #fff;
  	--blue: #004ef8;
  	--grey: #f4f4f4;
+ 	--orange: #f1592a;
 }
 body {
 	font-family: Verdana;
@@ -40,10 +41,10 @@ section {
 	padding: 10px 10px 20px;
 }
 .header {
-	background-color: var(--blue);
+	background-color: var(--orange);
 }
 .footer {
-	background-color: #061731;
+	background-color: var(--orange);
 }
 .header,
 .footer {
@@ -102,6 +103,7 @@ label {
     border-radius: 5px;
     border: 1px solid #d2d2d2;
     padding: 0 15px;
+    outline: 0;
 }
 textarea.in-text {
 	height: 100px;
@@ -114,7 +116,7 @@ textarea.in-text {
     height: 40px;
     font-size: 14px;
     border-radius: 25px;	
-    background-color: var(--blue);
+    background-color: var(--orange);
     color: #fff;
     text-align: center;
     font-weight: 700;
@@ -123,7 +125,7 @@ textarea.in-text {
 }
 .btn:hover {
 	cursor: pointer;
-	background-color: #003ec5;
+	background-color: #da3e0e;
 }
 
 .custom-checkbox,
@@ -235,10 +237,12 @@ textarea.in-text {
 .accordion a {
 	text-decoration: none;
 	font-weight: bold;
-	color: #004ef8;
+	color: var(--orange);
 }
-.tabs a:hover {
-	color: #081f3f;
+.tabs a.active,
+.tabs a:hover,
+.accordion-head.open a {
+	color: #da3e0e;
 }
 .tab-item {
 	display: none;

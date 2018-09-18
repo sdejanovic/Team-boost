@@ -1,10 +1,15 @@
 $(window).on("load", function () {
-	$("#firstClick").one("click", function() {
-		var $secondBtn = $("<input type='button' value='second button' class='btn' id='secondBtn' />");
-        $("#btnContainer").append($secondBtn);
+	
+	$(".btn").click(function() {
+		alert("click on the button!");
 	});	
-
-	$("body").on("click", "#secondBtn", function() {
-		alert("click on the second button!");
+	
+	$(".grid").on("click", ".btn", function() {
+		alert("click on the button!");
 	});	
 });
+
+/*
+var $secondBtn = $("<input type='button' value='second button' class='btn' id='secondBtn' />");
+$("#btnContainer").append($secondBtn);
+*/
